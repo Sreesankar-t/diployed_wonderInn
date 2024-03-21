@@ -1,0 +1,82 @@
+.heading_wrapper h1 {
+  font-size: 30px;
+}
+.divider {
+  display: flex;
+  gap: 10px;
+}
+.prgrss_maintain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  margin: 20px;
+}
+.prgrss_maintain h1 {
+  color: #b1b1b1;
+  font-weight: 400;
+}
+
+.progess_c {
+  width: 20%;
+  padding: 5px;
+}
+.prgs {
+  padding: 5px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #febb02;
+}
+.prgs p {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+}
+
+.review_Content_C {
+  margin-top: 20px;
+}
+.R_Wrapp {
+  margin: 10px;
+  background-color: #ebf3ff;
+}
+.RandR {
+  padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading_wrapper h1 {
+    font-size: 20px;
+  }
+
+  .prgrss_maintain {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .prgrss_maintain h1 {
+    font-size: 20px;
+  }
+
+  .progess_c {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .R_Wrapp {
+    margin: 5px;
+  }
+
+  .RandR {
+    padding: 10px;
+  }
+
+  .review_Content_C h1 {
+    font-size: 14px;
+  }
+
+  .review_Content_C p {
+    font-size: 14px;
+  }
+}

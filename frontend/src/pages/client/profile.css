@@ -1,0 +1,395 @@
+:root {
+  --darBlue: #212768;
+  --blue: #8faae8;
+  --gold: #eab100;
+  --grey: #f9fafb;
+  --pink: #ff86af;
+  --white: #ffffff;
+  --profile-picture-size: 125px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes popUp {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes rolling {
+  from {
+    transform: translateY(-130px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(5px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.layout {
+  margin: 20px;
+}
+
+.profile {
+  animation: popUp ease-in-out 350ms;
+  background: var(--white);
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+
+  padding: 28px 30px 30px 35px;
+  position: relative;
+  width: 100%;
+}
+
+.profile__account {
+  align-self: center;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  padding-left: calc(var(--profile-picture-size) + 10px);
+}
+
+.profile__button {
+  border-radius: 50px;
+  border: 1px solid var(--darBlue);
+  color: var(--black);
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: ease-in-out 250ms background, ease-in-out 250ms color;
+}
+
+.profile__button:hover {
+  background: var(--darBlue);
+  color: var(--white);
+}
+
+.profile__edit {
+  flex: none;
+  margin-left: 30px;
+  width: 140px;
+}
+
+.profile__header {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.profile__picture {
+  background: var(--white);
+  border-radius: 100px;
+  border: 10px solid var(--white);
+  height: var(--profile-picture-size);
+  position: absolute;
+  top: -40px;
+  width: var(--profile-picture-size);
+}
+
+.profile__picture img {
+  border-radius: 100px;
+  height: 100%;
+  width: 100%;
+}
+
+.profile__stat {
+  animation: slideUp ease-in-out 350ms forwards;
+  border-right: 1px solid #e9e9e9;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  opacity: 0;
+  padding: 10px 4px;
+  transform: translateY(5px);
+  width: 100%;
+}
+
+.profile__stat:last-of-type {
+  border-right: none;
+}
+
+.profile__stat:nth-child(1) {
+  animation-delay: 300ms;
+}
+
+.profile__stat:nth-child(2) {
+  animation-delay: 400ms;
+}
+
+.profile__stat:nth-child(3) {
+  animation-delay: 500ms;
+}
+
+.profile__stats {
+  display: flex;
+  width: 100%;
+}
+
+.profile__username {
+  font-family: 'Montserrat', sans-serif;
+  color: #eab100;
+  font-size: 15px;
+  margin: 0;
+  text-align: right;
+}
+
+.profile__value1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  color: #eab100;
+}
+.profile__value {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  color: #eab100;
+}
+.proflieTable {
+  padding-top: 20px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-top: 30px;
+  font-size: 20px;
+}
+.profileHeader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-buttons {
+  display: flex;
+
+  padding: 10px;
+}
+
+.mbutton {
+  border: 1px solid rgb(79, 79, 79);
+  padding: 10px;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #1d1d60;
+  cursor: pointer;
+}
+.mbutton + .mbutton {
+  margin-left: 10px;
+}
+
+.formInputImg {
+  padding-top: 60px;
+  padding-left: 20px;
+}
+
+.deleteButtonPro {
+  background: rgb(0, 39, 139);
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.deleteButtonPro:hover {
+  background: rgb(4, 32, 61);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cardContainer {
+  animation: slideUp ease-in-out 350ms;
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.bookItems {
+  display: flex;
+  gap: 10px;
+}
+
+.hedingContainer {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.bookingPraraHeading {
+  font-weight: 500;
+}
+
+.texAreaBtn {
+  padding: 10px;
+  background-color: #212768;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.texAreaBtn:hover{
+  background-color: #272e76;
+  color: #eab100;
+}
+.main_C {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  border: #febb02 1px solid;
+}
+
+.rating_C {
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 20px;
+}
+
+.RV_btn {
+  padding: 10px;
+  background-color: rgb(34, 34, 106);
+  color: white;
+  border: none;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.RV_btn:hover {
+  color: #febb02;
+  background-color: rgb(49, 49, 138);
+}
+.btnWrap {
+  width: 100%;
+}
+.btnWrap p {
+  width: 100%;
+  color: red;
+  font-weight: 500;
+}
+
+.textarea_C {
+  padding-top: 20px;
+  animation: rolling 2s ;
+}
+.textarea_C textarea {
+  width: 100%;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-top: 10px;
+  border: 1px solid #eab100;
+}
+.review_btn {
+  display: flex;
+  justify-content: end;
+  padding-right: 10px;
+
+ 
+}
+
+.reviewHeader{
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .profile {
+    padding: 15px;
+  }
+
+  .profile__button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .profile__edit {
+    margin-left: 15px;
+    width: 100px;
+  }
+
+  .profile__header {
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .profile__stat {
+    padding: 5px 2px;
+    font-size: 12px;
+  }
+  .profile__stat:nth-child(1) {
+    display: none;
+  }
+  .mbutton {
+    font-size: 15px;
+  }
+
+  .profile__value {
+    font-size: 12px;
+  }
+  .hedingContainer h2 {
+    font-size: 12px;
+  }
+  .deleteButtonPro {
+    font-size: 12px;
+  }
+  .bookingPraraHeading {
+    font-size: 10px;
+  }
+  .bookItems p {
+    font-size: 10px;
+  }
+
+  .main_C {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .rating_C {
+    width: 100%;
+    margin: 10px;
+  }
+  .btnWrap p {
+    font-size: 16px;
+  }
+  .textarea_C {
+    padding-top: 10px;
+  }
+
+  .textarea_C textarea {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .review_btn {
+    padding-right: 5px;
+  }
+}

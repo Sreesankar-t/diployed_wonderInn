@@ -1,0 +1,9 @@
+.blogViewlistContainer{
+   margin-top: 100px;
+}
+
+.image-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

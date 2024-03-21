@@ -1,0 +1,87 @@
+.fp {
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .fpItem{
+    flex: 1;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .fpImg{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .fpName{
+    color: #282727;
+    font-weight: bold;
+  }
+  
+  .fpCity{
+    font-weight: 300;
+  }
+  
+  .fpPrice{
+    font-weight: 500;
+  }
+  
+  .fpIcon{
+   background-color: transparent;
+    color: #febb02;
+    border: none;
+    padding: 3px;
+    margin-right: 10px;
+    font-weight: bold;
+    width: 25px;
+    height: 25px;
+  }
+  .starSPan{
+    font-size: 30px;
+    font-weight: 800;
+  }
+  
+  .fpRating>span{
+    font-size: 14px;
+  }
+
+  @media only screen and (max-width:600px) {
+    .fp{
+      flex-direction: column;
+    }
+    .fpName{
+    
+     font-size: 12px;
+    }
+    
+    .fpCity{
+      font-size: 12px;
+    }
+    
+    .fpPrice{
+     font-size: 12px;
+    }
+    .fpPrice b {
+      font-size: 12px;
+    }
+    .fpIcon{
+    display: none;
+    }
+    .starSPan{
+      display: none;
+    }
+    .nnm{
+     display: none;
+    }
+    
+    .fpRating>span{
+      font-size: 10px;
+    }
+    
+  }

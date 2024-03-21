@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+
+  font-family:  system-ui ,Avenir, Helvetica, Arial, sans-serif;
+ 
+}
+
+
+Body::-webkit-scrollbar{
+  display:none;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+

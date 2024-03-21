@@ -1,0 +1,169 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navlnavbar {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navlnavbar span {
+  color: #febb02;
+  font-size: 20px;
+  font-weight: 500;
+}
+.navlnavbar p {
+  color: rgb(4, 4, 4);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.lbody {
+  height: 80%;
+  width: 50%;
+  display: flex;
+  box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+.limage {
+  width: 50%;
+  height: 100%;
+  background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/07/d5/77/rambagh-palace-exterior.jpg?w=1200&h=-1&s=1');
+  background-size: cover; /* This property scales the image to cover the entire element */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.lcontent {
+  width: 50%;
+  height: 80%;
+  border: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  background: white;
+}
+
+.nameContent {
+  width: auto;
+  padding: 10px;
+  background-color: #000000;
+  border: 1px solid #febb02;
+  border-radius: 5px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputContent {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: slideUp ease-in-out 350ms
+}
+
+.lInput {
+  height: 30%;
+  padding: 10px;
+  border: 1px solid #febb02;
+  border-radius: 5px;
+  background-color: transparent;
+  margin-bottom: 10px; /* Add some space between input fields */
+  width: 100%;
+}
+
+.lButton {
+  width: 100%;
+  border: none;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.lButton:hover {
+  color: #febb02;
+}
+
+.lButton:disabled {
+  background-color: #03243c8c;
+  cursor: not-allowed;
+}
+
+.modalIn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+  align-items: center;
+  gap: 20px;
+}
+.modalSecondIn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+  align-items: center;
+  gap: 20px;
+}
+
+.modalTextfelidContainer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+  /* animation */
+  @keyframes slideUp {
+    from {
+      transform: translateY(5px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+
+@media screen and (max-width: 674px) {
+  .lbody{
+    height: 60%;
+    width: 80%;
+  }
+  .navlnavbar{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navlnavbar span{
+    font-size: 12px;
+  }
+  .navlnavbar p{
+    font-size: 12px;
+  }
+  .limage{
+    display: none;
+  }
+  .lcontent{
+    width: 100%;
+    
+  }
+}
+
+

@@ -1,0 +1,84 @@
+.EBloglist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 100px;
+}
+.SbarC {
+  width: 350px;
+}
+
+.Sidebar {
+  flex: 0 0 15%;
+}
+
+.EBloglistContainer {
+  flex: 1;
+  margin: 20px;
+  margin-top: 55px;
+}
+
+.EBloglistContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  padding-top: 40px;
+  padding-left: 30px;
+}
+
+.bbtn {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  background-color: teal;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.Ebrql {
+  width: 100%;
+}
+
+.bform input {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+}
+
+.loader-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  padding: 20px;
+  z-index: 9999;
+}
+
+.EBbtn {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(4, 5, 5);
+  cursor: pointer;
+}
+
+.EBbtnd {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(131, 137, 137);
+  cursor: no-drop;
+}
+
+@media (max-width: 768px) {
+  .EBloglist {
+    flex-direction: column;
+  }
+
+  .Sidebar {
+    flex: 0 0 100%;
+  }
+}

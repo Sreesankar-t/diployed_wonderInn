@@ -1,0 +1,155 @@
+
+.home{
+    justify-content: center;
+}
+
+.home .posts {
+  animation: fadeIn ease-in-out 350ms;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    width: 1500px;
+  }
+  
+  .home .posts .post {
+    display: flex;
+    gap: 100px;
+    height: 370px;
+  }
+  
+  .home .posts .post:nth-child(2n + 1) {
+    flex-direction: row-reverse;
+  }
+  
+  .home .posts .post .img {
+    flex: 2;
+    position: relative;
+  }
+  
+  /* .home .posts .post .img::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #a9a9a9;
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    z-index: -1;
+  }
+   */
+  .home .posts .post .img img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  .home .posts .post .content {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+ 
+  }
+  
+  .home .posts .post .content h1 {
+    font-size: 48px;
+  }
+  .home .posts .post .content .h3container p {
+    font-size: 18px;
+  }
+  
+  .home .posts .post .content p {
+    font-size: 10px;
+  }
+  
+  .redmore-btn {
+    width: max-content;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid  #febb02;
+    font-size: 14px;
+    color: rgb(0, 6, 128);
+    transition: all .3s ease-in-out;
+  }
+  
+  .redmore-btn:hover {
+    border: 1px solid white;
+    background-color: #febb02;
+    color: white;
+   
+  }
+  
+
+  /* @keyframes popUp {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  } */
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+
+  @media only screen and (max-width: 600px) {
+    .home .posts .post {
+      display: flex;
+      flex-direction: column;
+      gap: 10px; 
+    }
+    .home .posts .post:nth-child(2n + 1) {
+      flex-direction: column;
+    }
+  
+    .home .posts .post .img img {
+      max-height: 200px; 
+    }
+  
+    .home .posts .post .content  {
+      gap: 10px; 
+    }
+  
+    .home .posts .post .content h1 {
+      font-size: 20px; 
+    }
+    .home .posts .post .content time {
+      font-size: 10px; 
+    }
+  
+    .home .posts .post .content .h3container p {
+      font-size: 12px; 
+    }
+  
+    .home .posts .post .content p {
+      font-size: 8px; 
+    }
+  
+    .home .posts .post .content button {
+      padding: 8px 16px; 
+    }
+    .redmore-btn{
+      width: max-content;
+      height: 35px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    background-color: white;
+    border: 1px solid  #febb02 ;
+    
+    }
+  }
